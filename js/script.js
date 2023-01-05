@@ -30,7 +30,7 @@ function game() {
 
 		const imgCard = document.createElement('img');
 		imgCard.setAttribute("id", String(i));
-		imgCard.setAttribute("src", '../img/0.jpg');
+		imgCard.setAttribute("src", 'img/0.jpg');
 		imgCard.setAttribute("class", "game__card");
 		imgCard.addEventListener("click", flipCard);
 
