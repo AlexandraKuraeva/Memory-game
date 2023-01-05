@@ -15,10 +15,11 @@ let quantityOfCards = []; //Количество выбранных карточ
 let cardsOpen = []; //Открытые зеленые карты
 
 async function requestData() {
-	const request = await fetch('../db.json')
+	const request = await fetch('https://raw.githubusercontent.com/AlexandraKuraeva/Memory-game/main/db.json')
 	const data = await request.json()
 	cardsArr.push(...data)
 }
+
 
 function game() {
 
