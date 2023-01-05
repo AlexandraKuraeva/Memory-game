@@ -127,6 +127,8 @@ body{
 	box-shadow: 0px 0px 10px 3px #fff;
 	transition: all .5s;
 	perspective: 1000px;
+	cursor: pointer;
+	
 }
 .game__card.flip {
   transform: rotateY(180deg);
