@@ -8,7 +8,7 @@ const cardsArr = []
 
 if (!modal || !modalOverlay || !restartBtn || !gameTable) throw new Error('Необходимые для приложения элементы отсутвтуют')
 
-// Логика  игры
+
 let cardsChosenArr = [];// Выбранные карточки
 let cardsChosenArrId = [];// Идентефикаторы выбранных карточек
 let quantityOfCards = []; //Количество выбранных карточек
@@ -36,8 +36,8 @@ function game() {
 
 		gameTable.appendChild(imgCard);
 	}
-
-	cardsArr.sort(() => { 				//randomizer
+        //randomizer
+	cardsArr.sort(() => { 				
 		return 0.5 - Math.random()
 	});
 
@@ -46,7 +46,7 @@ function game() {
 	});
 
 }
-
+// Логика  игры
 function checkForMatch() {
 	const cards = document.querySelectorAll('img');
 
